@@ -26,11 +26,13 @@ void pop(Node* top){
 	element data;
 	Node* temp;
 	if(isEmpty(top->next)){
-		printf("Stack is Empty\n");
+		top->next = NULL;
 		return;
 	}
 	else{
-		top->next = (top->next)->next; 
+		temp = top->next;
+		top->next = temp->next;
+		free(temp);
 	}
 }
 

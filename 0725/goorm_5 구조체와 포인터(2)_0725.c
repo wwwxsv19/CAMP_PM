@@ -1,10 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
-typedef struct point{
+typedef struct{
 	int x;
 	int y;
-}pt;
+} pt;
 
 int main() {
 	pt* pt1 = (pt*)malloc(sizeof(pt));
@@ -21,5 +22,6 @@ int main() {
 	dtc = sqrt(pow((pt2->x - pt1->x), 2.0) + pow((pt2->y - pt1->y), 2.0));
 	
 	printf("%.2f", dtc);
+	
 	return 0;
 }

@@ -10,7 +10,6 @@ for(int i=n; i>=1; i--){
 */
 
 #include <stdio.h>
-
 int f(int n){
 	if(n==1) return 1;
 	else{

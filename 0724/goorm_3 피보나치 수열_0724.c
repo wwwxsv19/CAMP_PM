@@ -1,7 +1,6 @@
 // 자연수 n 번째의 피보나치 수열 출력
 
 #include <stdio.h>
-
 int a[201]; // 전역 변수 선언
 
 int f(int n){   

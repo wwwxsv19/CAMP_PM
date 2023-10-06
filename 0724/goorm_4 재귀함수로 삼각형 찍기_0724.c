@@ -1,7 +1,6 @@
 // 재귀함수로 별 찍기 구현
 
 #include <stdio.h>
-
 // '*'을 k 개 만큼 찍는 함수
 void star(int k){ 
 	if(k==0) return;

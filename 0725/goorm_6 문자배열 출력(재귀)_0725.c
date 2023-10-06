@@ -1,7 +1,9 @@
 #include <stdio.h>
+
 char star[20];
+
 void f(int n) {
-	if ( n<=0 ) return; // Á¾·áÁ¶°Ç
+	if(n<=0) return; // ì¢…ë£Œ ì¡°ê±´
 	f(n-1);
 	star[n] = '*';
 	printf("%s\n", star+1);

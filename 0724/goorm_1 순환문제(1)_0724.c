@@ -1,10 +1,16 @@
-/* ÀÌ ¹İº¹¹®À» Àç±ÍÇÔ¼ö·Î ¹Ù²Ù¾î ÀÛ¼ºÇØ º¸ÀÚ.
-int i,sum=0;
-for(i=n;i>=1;i--){
-    sum = sum + i;	
- }                   */
+/* 
+
+ì´ ë°˜ë³µë¬¸ì„ ì¬ê·€í•¨ìˆ˜ë¡œ ë°”ê¾¸ì–´ ì‘ì„±í•´ ë³´ì.
+
+int sum=0;
+for(int i=n; i>=1; i--){
+   sum = sum + i;	
+}
+
+*/
 
 #include <stdio.h>
+
 int f(int n){
 	if(n==1) return 1;
 	else{
@@ -14,8 +20,9 @@ int f(int n){
 
 int main (){
    int n;
+   
    scanf("%d", &n);
    printf("%d", f(n));
-   return 0;
 
+   return 0;
 }

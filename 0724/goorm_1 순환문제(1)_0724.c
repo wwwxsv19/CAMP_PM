@@ -1,12 +1,10 @@
 /* 
-
 이 반복문을 재귀함수로 바꾸어 작성해 보자.
 
 int sum=0;
 for(int i=n; i>=1; i--){
    sum = sum + i;	
 }
-
 */
 
 #include <stdio.h>

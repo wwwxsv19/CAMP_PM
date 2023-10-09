@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 typedef int element;
 
 typedef struct Node{
 	element data;
 	struct Node* next;
-}Node;
+} Node;
 
 void init(Node* top){
 	top->next = NULL;
@@ -25,6 +26,7 @@ void push(Node* top, element data){
 void pop(Node* top){
 	element data;
 	Node* temp;
+
 	if(isEmpty(top->next)){
 		top->next = NULL;
 		return;
@@ -47,14 +49,18 @@ void printList(Node* top){
 }
 
 int main() {
-	Node top ;
+	Node top;
+
 	init(&top);
+	
 	push(&top,1); printList(&top);
 	push(&top,2); printList(&top);
 	push(&top,3); printList(&top);
+	
 	pop(&top); printList(&top);
 	pop(&top); printList(&top);
 	pop(&top); printList(&top);
+	
 	return 0;
 }
 
